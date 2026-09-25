@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "836622124473",
+    "firebase_url": "https://simulacion-interactivos-default-rtdb.firebaseio.com",
+    "project_id": "simulacion-interactivos",
+    "storage_bucket": "simulacion-interactivos.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836622124473:android:9bb8afee731d1c8c192268",
+        "android_client_info": {
+          "package_name": "com.upb.registroauth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv3ohufv7oror-H1jm9t0Lo4IAOk6H290"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
