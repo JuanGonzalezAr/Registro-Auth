@@ -123,6 +123,18 @@ public class AuthManager : MonoBehaviour
         _ = SaveScore(puntaje);
     }
 
+    // Versión awaitable: guarda el puntaje y luego recarga la tabla (la usa ClickGame).
+    public async Task SubmitScoreAndRefreshAsync(int puntaje)
+    {
+        await SaveScore(puntaje);
+        await GetLeaderboard();
+    }
+
+    // Accesos de solo lectura para otros scripts (ClickGame).
+    public GameObject ProfilePanelObject => profilePanel;
+    public bool IsLoggedIn => firebaseReady && auth != null && auth.CurrentUser != null;
+    public int CurrentScore => currentScore;
+
     // ------------------------------------------------------------------
     // Registro
     // ------------------------------------------------------------------
